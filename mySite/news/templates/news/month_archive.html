@@ -1,0 +1,10 @@
+{% block content %}
+<h1> {{ month }}월의 기사</h1>
+
+{% for article in article_list %}
+    <h3>{{ article.headline }}</h3>
+    <p>{{ article.content}}</p>
+    <p>By {{ article.reporter.full_name }}</p>
+    <p>Published {{ article.pub_date|date:"m j, Y" }}</p>
+{% endfor %}
+{% endblock %}
