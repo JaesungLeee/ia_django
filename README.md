@@ -22,4 +22,4 @@
 #### 참조
 * Django Tutorial : https://docs.djangoproject.com/en/3.0/
 * Django Date Format : https://oddly.tistory.com/64
-* Django Example : https://cntechsystems.tistory.com/85?category=817164
+
