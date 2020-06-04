@@ -19,6 +19,19 @@
 * IPaddress:Portnum/news/articles/[YEAR]/[MONTH] <br>
 : 해당 [MONTH]에 있는 Article들을 보여줌 <br>
 : 여러개의 Article이 있을 경우 모두 보여줌
+
+#### Social account login (Google, Facebook, ...)
+* 기존 login 방식<br>
+: db.sqlite3에 사용자 정보가 저장<br>
+: db와 db를 다루는 logic이 한 공간에 존재<br>
+: request를 받으면 실행되는 함수 
+* Social account login 방식 <br>
+: db와 db를 다루는 logic이 다른 공간에 존재<br>
+: 해당 서버에 request와 token을 보내면서 승인 받음 <br><br>
+* 명령어 <br>
+: pip install django-allauth
+
+
 #### 참조
 * Django Tutorial : https://docs.djangoproject.com/en/3.0/
 * Django Date Format : https://oddly.tistory.com/64
